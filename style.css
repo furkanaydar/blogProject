@@ -1,0 +1,176 @@
+@font-face {
+    font-family:sans;
+    src:url(sans.ttf);
+}
+@font-face {
+    font-family:deli;
+    src:url(DeliciousCurls.ttf);
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid red;
+    border-style: hidden;
+    border-radius: 15px 3px;
+    background-color: burlywood;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: chocolate;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+li a:hover:not(.active) {
+    background-color: gainsboro;
+    transition: 0.5s;
+}
+
+.active {
+    color: aqua;
+    background-color: darksalmon;
+}
+
+h1 {
+    color: brown;
+}
+
+p {
+    color: black;
+}
+
+p.error {
+    color: red;
+    font-weight: bold;
+    border: 1px solid pink;
+    margin-left: 60px;
+    margin-right: 780px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: antiquewhite;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:1px;
+    border-radius: 15px ;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: deli;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+    transition: transform 2s;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    border-radius: 8px 8px 20px 20px;
+    position: sticky;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1c5f8b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgba( 0, 0, 0, 0.175 );
+}
+
+.button:hover {background-color: #134871}
+
+.button:active {
+  background-color: #134871;
+  box-shadow: 40 5px #666;
+  transform: translateY(4px);
+}
